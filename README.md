@@ -20,8 +20,6 @@ A complete toolkit for capturing, analyzing, and visualizing IoT malware using T
 malware_capture_dashboard/   # Malware listing & download panel
 static_analysis/             # Scripts + HTML dashboard
 dynamic_analysis/            # Docker-QEMU workflows + HTML dashboard
-sample_reports/              # JSON reports (static + dynamic)
-malware_samples/             # Original and unpacked binaries
 ```
 
 ## Getting Started
@@ -32,12 +30,22 @@ To identify and access the details of the captured malware from TPOT automatical
 2. Follow the README.md present in that directory
 
 ### Automated Static Analysis
-1. Clone the repo and set up dependencies (`binwalk`, `upx`, etc.).
-2. Use the capture dashboard to track/download malware.
+Setup an Ubuntu 22.04 LTS Server Image with 
+- Memory: 4 GB RAM
+- CPU: 2 cores
+- Storage: 40 GB
+- Network Configuration: Host-Only Adapter for full network isolation and safe handling of malicious binaries and NAT Adapter temporarily to fetch external dependencies.
+
+The following tools and libraries to be installed in the VM to support static analysis: 
+- python3
+- binwalk (firmware and binary inspection)
+- p7zip-full (extraction of .zip malware samples)
+- unzip (basic extraction utility)
+- upx (packer detection and binary unpacking),
+
+1. `cd` to static_analysis
 3. Run `iot_static_analysis_json_upx.sh` on samples.
-4. Use `iot_static_analysis.html` to view static reports.
-5. Execute architecture-matching Docker container for dynamic analysis.
-6. View `strace` and `pcap` insights using dynamic analysis dashboard.
+4. Use `iot_static_analysis.html` to view static reports. Upload the json results to this dashboard.
 
 ## Credits
 
