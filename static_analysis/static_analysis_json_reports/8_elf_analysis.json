@@ -1,0 +1,17 @@
+{
+  "sample_name": "96d5b0617677d3acf6eaeba2e7dcb8a1de575a3c904c9dbbf36457eb8d9b8c44.elf",
+  "sha256": "96d5b0617677d3acf6eaeba2e7dcb8a1de575a3c904c9dbbf36457eb8d9b8c44",
+  "file_details": "96d5b0617677d3acf6eaeba2e7dcb8a1de575a3c904c9dbbf36457eb8d9b8c44.elf: ELF 32-bit LSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, stripped",
+  "strings_summary": [
+    ".shstrtab"
+  ],
+  "elf_metadata": {
+    "header": ["ELF Header:","  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 ","  Class:                             ELF32","  Data:                              2's complement, little endian","  Version:                           1 (current)","  OS/ABI:                            UNIX - System V","  ABI Version:                       0","  Type:                              EXEC (Executable file)","  Machine:                           MIPS R3000","  Version:                           0x1","  Entry point address:               0x40027c","  Start of program headers:          52 (bytes into file)","  Start of section headers:          1056 (bytes into file)","  Flags:                             0x1007, noreorder, pic, cpic, o32, mips1","  Size of this header:               52 (bytes)","  Size of program headers:           32 (bytes)","  Number of program headers:         3","  Size of section headers:           40 (bytes)","  Number of section headers:         7","  Section header string table index: 6"],
+    "sections": ["There are 7 section headers, starting at offset 0x420:","","Section Headers:","  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al","  [ 0]                   NULL            00000000 000000 000000 00      0   0  0","  [ 1] .text             PROGBITS        004000a0 0000a0 000300 00  AX  0   0 16","  [ 2] .rodata           PROGBITS        004003a0 0003a0 000010 01 AMS  0   0  4","  [ 3] .got              PROGBITS        004403b0 0003b0 00003c 04 WAp  0   0 16","  [ 4] .bss              NOBITS          004403f0 0003ec 000010 00  WA  0   0 16","  [ 5] .mdebug.abi32     PROGBITS        00000048 0003ec 000000 00      0   0  1","  [ 6] .shstrtab         STRTAB          00000000 0003ec 000031 00      0   0  1","Key to Flags:","  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),","  L (link order), O (extra OS processing required), G (group), T (TLS),","  C (compressed), x (unknown), o (OS specific), E (exclude),","  D (mbind), p (processor specific)"],
+    "linked_libraries": []
+  },
+  "network_indicators": {
+    "ips": ["45.200.24.82"],
+    "urls": []
+  }
+}
