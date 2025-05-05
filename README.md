@@ -47,6 +47,10 @@ The following tools and libraries to be installed in the VM to support static an
 3. Run `iot_static_analysis_json_upx.sh` on samples.
 4. Use `iot_static_analysis.html` to view static reports. Upload the json results to this dashboard.
 
+### Automated Dynamic Analysis
+1. `cd dynamic_analysis`
+2. Follow its README.md
+
 ## Credits
 
 * Based on methods from: [adumbrati0n’s Mirai/Echobot Case Study](https://adumbrati0n.medium.com/malware-analysis-iot-case-study-mirai-echobot-0e0ec4e255d8)
